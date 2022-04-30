@@ -3,9 +3,13 @@ Send new RSS feed entries to discord via a webhook.
 
 ## Usage
 1. Install dependencies - `python3 -m pip install -r requirements.txt`
+    安裝依賴 - `python3 -m pip install -r requirements.txt`
 2. Create your config.yaml file (see [sample_config.yaml](sample_config.yaml))
-3. Run the script - ~~`python3 main.py`~~ `sh run.sh`
-
+    建立你的 config.yaml 檔案 ( 參考 [sample_config.yaml](sample_config.yaml) )
+3. Run the script - `python3 main.py` 
+    執行程式 `python3 main.py` 
+    這裡我寫了一個 while true batch,自動化每5秒執行一次
+    `sh run.sh`
 
 To make this script check for new entries periodically, I would recommend using something like cron to schedule the script to run automatically.
 
