@@ -54,13 +54,9 @@ def send_entry(webhook: Webhook,
             return field
 
     embed = Embed()
-    embed.colour = fields.get("colour") or fields.get("color") or Embed.Empty
     embed.title = parse_field(fields.get("title"))
     embed.url = parse_field(fields.get("url"))
-    embed.description = parse_field(fields.get("body"))
-    embed = embed.set_thumbnail(url=(parse_field(fields.get("thumbnail")) or Embed.Empty))
-
-    webhook.send(username=f"{name} RSS Feed", content=f"New post in {name}!", embed=embed)
+    webhook.send(content=f"{embed.title}\n{embed.url}")
 
 
 def main():
