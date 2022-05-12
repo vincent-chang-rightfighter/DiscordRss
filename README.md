@@ -1,6 +1,8 @@
 # Discord RSS
 Send new RSS feed entries to discord via a webhook. 
 
+## This repository has been deprecated,please consider using [New Repo](https://github.com/vincent-chang-rightfighter/DiscordRSS-Improve) 
+
 ## Usage
 1. Install dependencies - `python3 -m pip install -r requirements.txt`
 
